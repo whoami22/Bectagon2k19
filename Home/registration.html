@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>BECTAGON-2K19 Registration Form</title>
+	
+	<!--  FAVICON AND TOUCH ICONS -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/i3_new.png"/>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all"/>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/font-awesome.min.css" media="all"/>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/libs/maginificpopup/magnific-popup.css" media="all"/>
+
+    <!-- Time Circle -->
+    <link rel="stylesheet" href="assets/libs/timer/TimeCircles.css" media="all"/>
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.carousel.min.css" media="all" />
+    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.theme.default.min.css" media="all" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700%7cPoppins:300,400,400i,600,600i,700,800,900"/>
+
+    <!-- MASTER  STYLESHEET  -->
+    <link id="lgx-master-style" rel="stylesheet" href="assets/css/style-default.min.css" media="all"/>
+
+    <!-- MODERNIZER CSS  -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+$(document).ready(function(){
+    $("select").change(function(){
+        $(this).find("option:selected").each(function(){
+            var optionValue = $(this).attr("value");
+            if(optionValue){
+                $(".box").not("." + optionValue).hide();
+                $("." + optionValue).show();
+            } else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+});
+function phoneNumber(pnonenum){
+    var ph = /^\d{10}$/;
+    if(phonenum.value.match(ph)){
+        return true;
+    }
+    else{
+        alert("Enter Valid mobile no");
+        return false;
+    }
+}
+</script>
+<style type="text/css">
+	.label{color:black;font-size:15px}
+	button {
+		overflow: hidden;
+	}
+</style>
+</head>
+
+<body>
+<!--HEADER-->
+<header>
+    <div id="lgx-header" class="lgx-header">
+        <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed menu-onscroll"> <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
+            <div class="lgx-container"> <!--lgx-container-fluid-->
+                <nav class="navbar navbar-default lgx-navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       <div class="lgx-logo">
+                            <a href="index.html" class="lgx-scroll">
+                                <img src="assets/img/i3_new.png" alt="Eventhunt Logo"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                       
+                        <ul class="nav navbar-nav lgx-nav navbar-right">
+                        <!--<ul class="nav navbar-nav lgx-nav navbar-right"-->
+							<li><a class="lgx-scroll" href="index.html#lgx-header">Home</a></li>
+							<li><a class="lgx-scroll" href="index.html#lgx-proshow">Pro-Show</a></li>
+                            <li><a class="lgx-scroll" href="index.html#lgx-speakers">Events</a></li>
+                            <li><a class="lgx-scroll" href="index.html#lgx-schedule">Schedule</a></li>
+							<li><a class="lgx-scroll" href="#">Registration</a></li>
+                            <!--<li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li>-->
+							<li><a class="lgx-scroll" href="patrons.html">Governance</a></li>
+                            <li><a class="lgx-scroll" href="contact.html">Contact</a></li>
+							<li><a class="lgx-scroll" href="index.html#devs">Dev's</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </nav>
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+    </div>
+</header>
+<!--HEADER END-->
+
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins" style="background-image: url(assets/img/regbg.jpg);background-repeat:no-repeat;background-size:cover;">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title"><b>Registration Form-Department Events</b></h2>
+					<p>Registration Fee-300</p>
+					<p>Sports Fee-100/head</p>
+					<p>Accommodation-100/day(Including Food)</p>
+                    <form action="newjsp.jsp" name="reg" method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label" >Name</label>
+                                    <input class="input--style-4" type="text" name="full_name" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label" >College Name</label>
+                                    <input class="input--style-4" type="text" name="college_name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">College Regd No.</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4" type="text" name="college_regdno" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">College Town/City</label>
+                                    <div class="input-group-icon">
+                                        <input class="input--style-4" type="text" name="college_town" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Gender</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Male
+                                            <input type="radio" value="Male" checked="checked" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Female
+                                            <input type="radio" value="Female" name="gender">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Do You Need Accommodation?</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">YES
+                                            <input type="radio" value="Yes" checked="checked" name="accomm">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">NO
+                                            <input type="radio" value="No" name="accomm">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Email</label>
+                                    <input class="input--style-4" type="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Phone Number</label>
+                                    <input class="input--style-4" type="tel" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label class="label">Department</label>
+                            <div class="rs-select2 js-select-simple select--no-search">
+                                <select name="dept">
+                                    <option disabled="disabled" selected="selected">Choose option</option>
+                                    <option value="cse">Computer Science And Engineering</option>
+                                    <option value="ece">Electronics And Communication Engineering</option>
+                                    <option value="eee">Electrical And Electronics Engineering</option>
+									<option value="ce">Civil Engineering</option>
+                                    <option value="me">Mechanical Engineering</option>
+                                    <option value="it">Information Technology</option>
+									<option value="eie">Electronics And Instrumentation Engineering</option>
+									<option value="che">Chemical Engineering</option>
+                                </select>
+                                <div class="select-dropdown"></div>
+                            </div>
+                        </div>
+						<div class="cse box">CSE EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Blind Coding" >Blind Coding</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Polyglot" >Polyglot</label>
+							</div>
+						</div>
+						<div class="ece box">ECE EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Tricky Circuit" >Tricky Circuit</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Mind Rush" >Mind Rush</label>
+							</div>
+						</div>
+						<div class="eee box">EEE EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Circuit Debugging and Design" >Circuit Debugging and Design</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Simulation of Network" >Simulation of Network</label>
+							</div>
+						</div>
+						<div class="ce box">CIVIL EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Model Making" >Model Making</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Auto CAD" >Auto CAD</label>
+							</div>
+						</div>
+						<div class="me box">MECH EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="RoboRace" >RoboRace</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Innovative Project Experiment" >Innovative Project Experiment</label>
+							</div>
+						</div>
+						<div class="it box">IT EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Mobile Application Development" >Mobile Application Development </label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Animated Film Making" >Animated Film Making</label>
+							</div>
+						</div>
+						<div class="eie box">EIE EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Workshop" >Workshop</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Circuitrix" >Circuitrix</label>
+							</div>
+						</div>
+						<div class="che box">CHEMICAL EVENTS
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Technical Quiz">Technical Quiz</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Paper Presentation">Paper Presentation</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Industry Problem Solution" >Industry Problem Solution</label>
+							</div>
+							<div class="checkbox">
+								<label><input name="selected" type="checkbox" value="Chemical Detective" >Chemical Detective</label>
+							</div>
+						</div>
+
+						<label><a href="https://goo.gl/forms/c21sQGT6lUHAbyC22" target="_blank">Click Here</a>  for Culturals,Sports and Literary Events</label>
+                        <div class="p-t-15">
+                            <button class="btn btn--radius-2 btn--blue" onclick="phoneNumber(document.reg.phone);getcaptcha.execute" type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+<!--<script>
+
+$(document).ready(function(){
+$(".recaptchaForm").on('submit',function(event){
+
+var recaptcha =$("#g-recaptcha-response").val();
+if(recaptcha===""){
+event.preventDefault();
+alert("Verify Captcha");
+}
+event.preventDefault();
+$.post("newjsp.jsp",{
+	"secret":"6LfgeI8UAAAAAPdFqpVQuuVn8IBidFvcG-LFruCe",
+	"response":recaptcha
+	
+	},function(response){
+		console.log(response);
+	});
+});
+});
+</script>-->
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+
+</body>
+
+</html>
+<!-- end document-->

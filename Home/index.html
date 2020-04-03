@@ -1,0 +1,1300 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<style>
+	.sectionNew{
+		background-color: #554BB9;
+	}
+	.lgx-footer-single{
+		text-align:center;
+	}
+	.cdown{
+		color:white;
+		font-size:20px;
+	}
+	@media(max-width:767px){
+		.about-date-area>.date{
+			color:#554bb9;
+		}
+		.cdown{
+			color:white;
+			font-size:15px;
+		}
+		.im{
+			content:url(assets/img/pro_show/mobi1.jpg)
+		}
+		.lgx-about{background:url(../assets/img/pro_show/probg.jpg) bottom no-repeat;}
+	}
+	.carousel{
+		background: #2f4357;
+		margin-top: 20px;
+	}
+	.carousel .item{
+		min-height: 280px; /* Prevent carousel from being distorted if for some reason image doesn't load */
+	}
+	.carousel .item img{
+		margin: 0 auto; /* Align slide image horizontally center */
+	}
+	#myBtn {
+  display: block;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  opacity:.6;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 2px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+</style>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <!-- The above 3 meta tags *must* come first in the head -->
+
+    <!-- SITE TITLE -->
+    <title>BECTAGON-2K19</title>
+    <meta name="description" content="Responsive EventHunt HTML Template"/>
+    <meta name="keywords" content="Bootstrap3, Event,  Conference, Meetup, Template, Responsive, HTML5"/>
+
+    <!--  FAVICON AND TOUCH ICONS -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/i3_new.png"/>
+
+    <!-- BOOTSTRAP CSS -->
+    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all"/>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/libs/fontawesome/css/font-awesome.min.css" media="all"/>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="assets/libs/maginificpopup/magnific-popup.css" media="all"/>
+
+    <!-- Time Circle -->
+    <link rel="stylesheet" href="assets/libs/timer/TimeCircles.css" media="all"/>
+
+    <!-- OWL CAROUSEL CSS -->
+    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.carousel.min.css" media="all" />
+    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.theme.default.min.css" media="all" />
+
+    <!-- GOOGLE FONT -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Oswald:400,700%7cPoppins:300,400,400i,600,600i,700,800,900"/>
+
+    <!-- MASTER  STYLESHEET  -->
+    <link id="lgx-master-style" rel="stylesheet" href="assets/css/style-default.min.css" media="all"/>
+
+    <!-- MODERNIZER CSS  -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		   
+		  $("#one").click(function(){
+			$("#first").show();
+			$("#second").hide();
+		  });
+		  $("#two").click(function(){
+			$("#first").hide();
+			$("#second").show();
+		  });
+		  //collapsable navbar
+		  $(function(){
+			var navMain = $(".navbar-collapse");
+			navMain.on("click","a",null,function(){
+				navMain.collapse('hide');
+				});
+		  });
+		});
+		</script>
+</head>
+
+<body class="home">
+<!--contribution-->
+<button id="myBtn" title="Go to top">Sponsorship</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3>Sponsorship</h3>
+    </div>
+    <div class="modal-body"> 
+      <p>
+	  <ul style="list-style:none;">
+		<li><b>Contact Convenor</b>
+			<ul style="list-style:none;">
+				<li><b>Dr. N.Rama Gopal</b>
+					<ul style="list-style:none;">
+						<li><a href="tel:+91-9963106450">9963106450</a></li>
+						<li><a href="mailto:nrgbec@gmail.com?subject=Bectagon">nrgbec@gmail.com</a></li>
+					</ul>
+				</li>
+				<li><b>Prof. Lakshmi Sreenivas</b>
+					<ul style="list-style:none;">
+						<li><a href="tel:+91-9440843015">9440843015</a></li>
+						<li><a href="mailto:nrgbec@gmail.com?subject=Bectagon">chlsbec@gmail.com</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+		</ul>
+	  </p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+<div class="lgx-container ">
+<!-- ***  ADD YOUR SITE CONTENT HERE *** -->
+
+
+<!--HEADER-->
+<header>
+    <div id="lgx-header" class="lgx-header">
+        <div class="lgx-header-position lgx-header-position-white lgx-header-position-fixed menu-onscroll"> <!--lgx-header-position-fixed lgx-header-position-white lgx-header-fixed-container lgx-header-fixed-container-gap lgx-header-position-white-->
+            <div class="lgx-container"> <!--lgx-container-fluid-->
+                <nav class="navbar navbar-default lgx-navbar">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                       <div class="lgx-logo">
+                            <a href="index.html" class="lgx-scroll">
+                                <img src="assets/img/i3_new.png" alt="Eventhunt Logo"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                       
+                        <ul class="nav navbar-nav lgx-nav navbar-right">
+                        <!--<ul class="nav navbar-nav lgx-nav navbar-right"-->
+							<li><a class="lgx-scroll" href="#lgx-header">Home</a></li>
+							<li><a class="lgx-scroll" href="#lgx-proshow">Pro-Show</a></li>
+                            <li><a class="lgx-scroll" href="#lgx-speakers">Events</a></li>
+                            <li><a class="lgx-scroll" href="#lgx-schedule">Schedule</a></li>
+							<li><a class="lgx-scroll" href="registration.html">Registration</a></li>
+                            <!--<li><a class="lgx-scroll" href="#lgx-sponsors">Sponsors</a></li>-->
+                            <li><a class="lgx-scroll" href="patrons.html">Governance</a></li>
+                            <li><a class="lgx-scroll" href="contact.html">Contact</a></li>
+							<li><a class="lgx-scroll" href="#devs">Dev's</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </nav>
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+    </div>
+</header>
+<!--HEADER END-->
+
+
+<!--BANNER-->
+<section>
+    <div class="lgx-banner">
+        <div class="lgx-banner-style">
+            <div class="lgx-inner lgx-inner-fixed">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-banner-info-area">
+                                <div class="lgx-banner-info-circle">
+                                    <div class="info-circle-inner">
+                                        <h4 class="date"><b class="lgx-counter">15-16</b> <span>FEB-2K19</span></h4>
+                                        <div class="container-fluid" style="color:white;font-size:30px">
+										<div class="row">
+											<div class="col-md-2 col-xs-2 col-sm-1">
+											</div>
+											<div class="col-md-2 col-xs-2 col-sm-1" id="day">
+											</div>
+											<div class="col-md-2 col-xs-2 col-sm-1" id="hrs">
+											</div>
+											<div class="col-md-2 col-xs-2 col-sm-1" id="min">
+											</div>
+											<div class="col-md-2 col-xs-2 col-sm-1"  id="sec">
+											</div>
+										</div>
+										<div class="row cdown">
+											<div class="col-md-2 col-xs-2 col-sm-1" >
+											</div>
+											<div class="col-md-2 col-xs-2 col-sm-1">Days
+											</div>&nbsp;
+											<div class="col-md-2 col-xs-2 col-sm-1">Hrs
+											</div>
+											<div class="col-md-2 col-xs-2 col-sm-1">Min
+											</div>
+											<div class="col-md-2 col-xs-2 col-sm-1">Sec
+											</div>
+										</div>
+										</div>
+										<script>
+										// Set the date we're counting down to
+										var countDownDate = new Date("Feb 15, 2019 08:00:00").getTime();
+
+										// Update the count down every 1 second
+										var x = setInterval(function() {
+
+										  // Get todays date and time
+										  var now = new Date().getTime();
+											
+										  // Find the distance between now and the count down date
+										  var distance = countDownDate - now;
+											
+										  // Time calculations for days, hours, minutes and seconds
+										  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+										  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+										  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+										  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+											
+										  // Output the result in an element with id="demo"
+										  document.getElementById("day").innerHTML = days;
+										  document.getElementById("hrs").innerHTML = hours;
+										  document.getElementById("min").innerHTML = minutes ;
+										  document.getElementById("sec").innerHTML = seconds  ;
+											
+										  // If the count down is over, write some text 
+										  if (distance < 0) {
+											clearInterval(x);
+											document.getElementById("demo").innerHTML = "EXPIRED";
+										  }
+										}, 1000);
+										</script>
+                                    </div>
+                                </div>
+                                <div class="lgx-banner-info"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg--> <!--banner-info-margin-->
+                                    <h2 class="title"><b style="color:#4285f4">B</b><b style="color:#ea4335">E</b><b style="color:#fbbc05">C</b><b style="color:#4285f4">T</b><b style="color:#34a853">A</b><b style="color:#ea4335">G</b><b style="color:#fbbc05">O</b><b style="color:#34a853">N</b> <span><b>2</b><b>K</b><b>1</b><b>9</b></span></h2>
+									<h3 class="subtitle">A 2-Day National Level Techno Cultural Literary & Sports Fest</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </div>
+</section>
+<!--BANNER END-->
+
+ <!--ABOUT-->
+<section>
+    <div id="lgx-proshow" class="lgx-about">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-7">
+                        <div class="lgx-about-content-area">
+                            <div class="lgx-heading">
+                                <h2 class="heading" style="color:#efad1d">EVERGREEN</h2>
+                                <h3 class="subheading">Do not miss the upcoming event, Who should attend?</h3>
+                            </div>
+                            <div class="lgx-about-content">
+                                
+                                <div class="about-date-area">
+                                    <h4 style="color:#efa506" class="date"><span>16</span></h4>
+                                    <p style="color:#efa506"><span style="color:#efa506">February 2019</span> Bapatla Engineering College, Bapatla</p>
+                                </div>
+
+                                <div class="section-btn-area">
+                                    <a class="lgx-btn" target="_blank" href="https://www.facebook.com/EvergreenIndia/"><span>More About</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-5">
+                        <div class="lgx-about-img-sp">
+                            <body>
+								<div class="bs-example">
+									<div id="myCarousel" class="carousel slide" data-ride="carousel">
+										<!-- Carousel indicators -->
+										<ol class="carousel-indicators">
+											<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+											<li data-target="#myCarousel" data-slide-to="1"></li>
+											<li data-target="#myCarousel" data-slide-to="2"></li>
+										</ol>   
+										<!-- Wrapper for carousel items -->
+										<div class="carousel-inner">
+											<div class="item active" style="background-image:url(assets/img/pro_show/i1.jpg);background-size:cover;">
+												
+											</div>
+											<div class="item" style="background-image:url(assets/img/pro_show/i2.jpg);background-size:cover;">
+												
+											</div>
+											<div class="item" style="background-image:url(assets/img/pro_show/i3.jpg);background-size:cover;">
+												
+											</div>
+										</div>
+										<!-- Carousel controls -->
+										<a class="carousel-control left" href="#myCarousel" data-slide="prev">
+											<span class="glyphicon glyphicon-chevron-left"></span>
+										</a>
+										<a class="carousel-control right" href="#myCarousel" data-slide="next">
+											<span class="glyphicon glyphicon-chevron-right"></span>
+										</a>
+									</div>
+								</div>
+							</body>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- //.CONTAINER -->
+        </div><!-- //.INNER -->
+    </div>
+</section>
+<!--ABOUT END-->
+
+
+<!--EVENTS-->
+<section>
+        <div id="lgx-speakers" class="lgx-speakers lgx-speakers2">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading">EVENTS</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker2"> <!--lgx-single-speaker lgx-single-speaker2 lgx-single-speaker3-->
+                                <figure>
+                                    <a class="profile-img" href="department.html"><img src="assets/img/events/department.jpg" alt="speaker"/></a>
+                                    <figcaption>
+                                        <div class="social-group">
+                                            <a class="sp-fb" href="https://www.facebook.com/bectagon2k19" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a class="sp-insta" href="https://www.instagram.com/bectagon_2k19" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                        <div class="speaker-info">
+                                            <h3 class="title"><a href="department.html">DEPARTMENT EVENTS</a></h3>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker2"> <!--lgx-single-speaker lgx-single-speaker2 lgx-single-speaker3-->
+                                <figure>
+                                    <a class="profile-img" href="department/dept/workshop.html"><img src="assets/img/events/workshop.jpg" alt="speaker"/></a>
+                                    <figcaption>
+                                        <div class="social-group">
+                                            <a class="sp-fb" href="https://www.facebook.com/bectagon2k19" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a class="sp-insta" href="https://www.instagram.com/bectagon_2k19" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                        <div class="speaker-info">
+                                            <h3 class="title"><a href="department/dept/workshop.html">WORKSHOPS</a></h3>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker2"> <!--lgx-single-speaker lgx-single-speaker2 lgx-single-speaker3-->
+                                <figure>
+                                    <a class="profile-img" href="department/dept/sports.html"><img src="assets/img/events/sports.jpg" alt="speaker"/></a>
+                                    <figcaption>
+                                        <div class="social-group">
+                                            <a class="sp-fb" href="https://www.facebook.com/bectagon2k19" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a class="sp-insta" href="https://www.instagram.com/bectagon_2k19" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                        <div class="speaker-info">
+                                            <h3 class="title"><a href="department/dept/sports.html">SPORTS</a></h3>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker2"> <!--lgx-single-speaker lgx-single-speaker2 lgx-single-speaker3-->
+                                <figure>
+                                    <a class="profile-img" href="department/dept/culturals.html"><img src="assets/img/events/culturals.jpg" alt="speaker"/></a>
+                                    <figcaption>
+                                        <div class="social-group">
+                                            <a class="sp-fb" href="https://www.facebook.com/bectagon2k19" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a class="sp-insta" href="https://www.instagram.com/bectagon_2k19" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                        <div class="speaker-info">
+                                            <h3 class="title"><a href="department/dept/culturals.html">CULTURAL EVENTS</a></h3>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker2"> <!--lgx-single-speaker lgx-single-speaker2 lgx-single-speaker3-->
+                                <figure>
+                                    <a class="profile-img" href="department/dept/literary.html"><img src="assets/img/events/literary.jpg" alt="speaker"/></a>
+                                    <figcaption>
+                                        <div class="social-group">
+                                            <a class="sp-fb" href="https://www.facebook.com/bectagon2k19" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a class="sp-insta" href="https://www.instagram.com/bectagon_2k19" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                        <div class="speaker-info">
+                                            <h3 class="title"><a href="department/dept/literary.html">LITERARY EVENTS</a></h3>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <div class="lgx-single-speaker2"> <!--lgx-single-speaker lgx-single-speaker2 lgx-single-speaker3-->
+                                <figure>
+                                    <a class="profile-img" href="department/dept/arts.html"><img src="assets/img/events/arts.jpg" alt="speaker"/></a>
+                                    <figcaption>
+                                        <div class="social-group">
+                                            <a class="sp-fb" href="https://www.facebook.com/bectagon2k19" target="_blank"><i class="fa fa-facebook"></i></a>
+                                            <a class="sp-insta" href="https://www.instagram.com/bectagon_2k19" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        </div>
+                                        <div class="speaker-info">
+                                            <h3 class="title"><a href="department/dept/arts.html">ARTS</a></h3>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                    <!--<div class="section-btn-area">
+                        <a class="lgx-btn lgx-btn-big" href="speakers.html">More Speakers</a>
+                    </div>-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+            <!-- //.INNER -->
+        </div>
+    </section>
+    <!--EVENTS END-->
+
+<!--SCHEDULE-->
+<section>
+    <div id="lgx-schedule" class="lgx-schedule">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading lgx-heading-white">
+                            <h2 class="heading">Event Schedule</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-tab lgx-tab2"> <!--lgx-tab2 lgx-tab-vertical-->
+                            <ul class="nav nav-pills lgx-nav lgx-nav-nogap lgx-nav-colorful">  <!--lgx-nav-nogap lgx-nav-colorful-->
+                                <li id="one"><a data-toggle="pill" href="#first"><h3>First <span>Day</span></h3> <p><span>15 </span>Feb, 2019</p></a></li>
+                                <li id="two"><a data-toggle="pill" href="#second"><h3>Second <span>Day</span></h3> <p><span>16 </span>Feb, 2019</p></a></li>
+                            </ul>
+                            <div class="tab-content lgx-tab-content">
+
+
+                                <div id="first" class="tab-pane fade in active">
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/reg.jpg" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">08:30 <span>Am</span> - 09:00 <span>Am</span></h4>
+                                                                <h3 class="title">Registration</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  In Gate And Out Gate<span>  Bapatla Engineering College</span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/inaugural.jpg" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">10:00 <span>Am</span> - 10:30 <span>Am</span></h4>
+                                                                <h3 class="title">Inaugural Function</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  Main stage, Ground <span>Bapatla Engineering College</span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/tech1.png" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">10:45 <span>Am</span> - 12:50 <span>Pm</span></h4>
+                                                                <h3 class="title">Technical Event-I</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  Yet to be decided <span></span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingfour">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/tech2.png" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">02:00 <span>Pm</span> - 03.45 <span>Pm</span></h4>
+                                                                <h3 class="title">Technical Event-II</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong> Yet to be decided <span> </span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingfive">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="true" aria-controls="collapsefive">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/cul.jpg" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">04:00 <span>Pm</span> - 08:00 <span>Pm</span></h4>
+                                                                <h3 class="title">Literary And Culturals</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  Yet to be decided <span></span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                                <div id="second" class="tab-pane fade">
+
+                                    <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingOne2">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/tech3.jpg" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">08:30 <span>Am</span> - 11:00 <span>Am</span></h4>
+                                                                <h3 class="title">Technical Event-III</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseOne2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  Yet to be decided <span></span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingTwo2">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo2" aria-expanded="true" aria-controls="collapseTwo2">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/tech4.jpg" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">11:15 <span>Am</span> - 03:00 <span>Pm</span></h4>
+                                                                <h3 class="title">Technical Event-IV</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseTwo2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  Yet to be decided <span></span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingThree2">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree2" aria-expanded="true" aria-controls="collapseThree2">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/cul.jpg" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">03:00 <span>Pm</span> - 04:30 <span>Pm</span></h4>
+                                                                <h3 class="title">Literary And Culturals</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseThree2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  Yet to be decided <span></span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+										<div class="panel panel-default lgx-panel">
+                                            <div class="panel-heading" role="tab" id="headingThree2">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour2" aria-expanded="true" aria-controls="collapseThree2">
+                                                        <div class="lgx-single-schedule">
+                                                            <div class="author">
+                                                                <img src="assets/img/pro.png" alt="Speaker"/>
+                                                            </div>
+                                                            <div class="schedule-info">
+                                                                <h4 class="time">04:30 <span>Pm</span> - 08:00 <span>Pm</span></h4>
+                                                                <h3 class="title">Pro-Show</h3>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseFour2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <h4 class="location"><strong>Location:</strong>  Yet to be decided <span></span> </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+        <!-- //.INNER -->
+    </div>
+</section>
+<!--SCHEDULE END-->
+
+
+
+<!--SPONSORED
+<section>
+    <div id="lgx-sponsors" class="lgx-sponsors">
+        <div class="lgx-inner-bg">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading">Offcial Sponsonrs</h2>
+                                <h3 class="subheading">Welcome to the dedicated to building remarkable Sponsores!</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//main row
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="sponsored-heading first-heading">Gold Sponsors</h3>
+                            <div class="sponsors-area sponsors-area-nogap sponsors-area-noshadow sponsors-area-col3"> <!--sponsors-area-col3 sponsors-area-noshadow sponsors-area-nogap sponsors-area-colorfull sponsors-area-colorfull-border sponsors-area-border--
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor-sp3.png" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor-sp2.png" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor3.png" alt="sponsor"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//col--
+                    </div>
+                    <!--//row--
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h3 class="sponsored-heading secound-heading">Silver Sponsors</h3>
+                            <div class="sponsors-area sponsors-area-noshadow sponsors-area-nogap">
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor4.png" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor-sp1.png" alt="sponsor"/></a>
+                                </div>
+                                <div class="single">
+                                    <a class="" href="#"><img src="assets/img/sponsors/sponsor3.png" alt="sponsor"/></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--//col--
+                    </div>
+                </div>
+                <!--//container--
+            </div>
+        </div>
+        <!--//lgx-inner--
+    </div>
+</section>
+<!--SPONSORED END-->
+
+
+
+
+
+    <!--CONTACT--
+    <section class="sectionNew">
+		
+        <div id="lgx-contact" class="lgx-contact"> <!--lgx-registration2 lgx-registration3 lgx-registration4--
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading lgx-heading-white">
+                                <h2 class="heading">CONTACT US</h2>
+                                <h3 class="subheading">Welcome to the dedicated to building remarkable Sponsores!</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //.CONTAINER --
+            </div><!-- //.INNER --
+        </div>
+    </section>
+    <!--Contact END-->
+<!--Patrons-->
+<section>
+    <div id="lgx-schedule" class="lgx-schedule lgx-schedule2 lgx-schedule-white">
+        <div class="lgx-inner">
+          
+                
+			<!--CONTAINER-->
+			<div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+							</BR></BR>
+                            <h2 class="heading">CHIEF GUEST</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-tab lgx-tab2"> <!--lgx-tab2-->
+                            <div class="tab-content lgx-tab-content">
+								<div id="home" class="tab-pane fade in active">
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-sm-3"></div>
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="panel panel-default lgx-panel">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<div class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<div class="lgx-single-schedule">
+																	<!--<div class="author">
+																		<img src="assets/img/president.jpg" alt="President"/>
+																	</div>-->
+																	<div class="schedule-info">
+																		<h3 class="title">Mr. J.V.R.S. Prasad</h3>
+																		<h4 class="author-info"><span>Head Talent Development</span> , TCS Hyderabad</h4>
+																	</div>
+																	
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+				<div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+							</BR></BR>
+                            <h2 class="heading">GUEST OF HONOUR</h2>
+                        </div>
+                    </div>
+                </div>
+				<div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-tab lgx-tab2"> <!--lgx-tab2-->
+                            <div class="tab-content lgx-tab-content">
+
+
+                                <div id="home" class="tab-pane fade in active">
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="row">
+											<div class="col-lg-3 col-md-3 col-sm-3"></div>
+											<div class="col-lg-6 col-md-6 col-sm-6">
+												<div class="panel panel-default lgx-panel">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<div class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<div class="lgx-single-schedule">
+																	<!--<div class="author">
+																		<img src="assets/img/president.jpg" alt="President"/>
+																	</div>-->
+																	<div class="schedule-info">
+																		<h3 class="title">Mr.Kumar Annavarapu</h3>
+																		<h4 class="author-info"><span>Founder-Director of Indo-American Student Council</span></h4>
+																	</div>
+																	
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+            </div><!--CONTAINER ENDS-->
+        </div>
+        
+		
+		<!-- //.INNER -->
+    </div>
+</section>
+<!--Patrons End-->
+
+
+    <!--TRAVEL INFO-->
+    <section>
+        <div id="lgx-travelinfo" class="lgx-travelinfo">
+            <div class="lgx-inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-heading">
+                                <h2 class="heading">ADDRESS AND HOSPITALITY</h2>
+                            </div>
+                        </div>
+                        <!--//main COL-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="lgx-travelinfo-content">
+                                <div class="lgx-travelinfo-single">
+										<div class="gmap_canvas">
+											<iframe width="250" height="128" id="gmap_canvas" src="https://maps.google.com/maps?q=bapatla%20engineering%20college&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+											</iframe>
+											
+										</div>
+											<style>
+												.mapouter{
+													text-align:right;
+													height:128px;
+													width:128px;
+												}
+												.gmap_canvas {
+													overflow:hidden;
+													background:none!important;
+													height:128px;
+												}
+											</style>
+                                    <h3 class="title">Venue</h3>
+                                    <p class="info">Bapatla Engineering College, Bapatla</p>
+                                </div>
+                                <div class="lgx-travelinfo-single">
+                                    <img src="assets/img/info-icon2.png" alt="Transport"/>
+                                    <h3 class="title">Transport</h3>
+									<!--<p class="info">The nearest airport is Vijayawada International Airport which is 104 km from Bapatla Engineering College.</p>-->
+                                    <p class="info">The nearest railway junction is at Vijayawada which is 74 km from Bapatla Railway Station[BPP].</p>
+                                </div>
+                                <div class="lgx-travelinfo-single">
+                                    <img src="assets/img/info-icon3.png" alt="Hotel & Restaurant"/>
+                                    <h3 class="title">Accommodation</h3>
+                                    <p class="info">Accommodation is available for both boys and girls. And accommdation starts from 5.00 Pm, 14th Feb 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//.ROW-->
+                </div>
+                <!-- //.CONTAINER -->
+            </div>
+        </div>
+    </section>
+    <!--TRAVEL INFO END-->
+	
+	<!--DEVS-->
+<section id="devs">
+    <div id="lgx-schedule" class="lgx-schedule lgx-schedule2 lgx-schedule-white" style="background-color: #00c7ae;">
+        <div class="lgx-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-heading">
+                            <h2 class="heading">DEV'S</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="lgx-tab lgx-tab2"> <!--lgx-tab2-->
+                            <div class="tab-content lgx-tab-content">
+
+
+                                <div id="home" class="tab-pane fade in active">
+
+                                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="row">
+											<div class="col-lg-4 col-md-4 col-sm-4">
+												<div class="panel panel-default lgx-panel">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<div class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<div class="lgx-single-schedule">
+																	
+																	<div class="schedule-info">
+																		<h3 class="title">Ch. Harsha Vardhan</h3>
+																		<h4 class="author-info"><span>4/4 B.Tech CSE</span><br/> Bapatla Engineering College</h4>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4">
+												<div class="panel panel-default lgx-panel">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<div class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<div class="lgx-single-schedule">
+																	
+																	<div class="schedule-info">
+																		<h3 class="title">B. Venu Madhav</h3>
+																		<h4 class="author-info"><span>4/4 B.Tech CSE</span><br/> Bapatla Engineering College</h4>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4">
+												<div class="panel panel-default lgx-panel">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<div class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<div class="lgx-single-schedule">
+																	
+																	<div class="schedule-info">
+																		<h3 class="title">G. Rahul Dathu</h3>
+																		<h4 class="author-info"><span>4/4 B.Tech CSE</span><br/> Bapatla Engineering College</h4>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><br/>
+										<div class="row">
+											<div class="col-lg-2 col-md-2 col-sm-2"></div>
+											<div class="col-lg-4 col-md-4 col-sm-4">
+												<div class="panel panel-default lgx-panel">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<div class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<div class="lgx-single-schedule">
+																	
+																	<div class="schedule-info">
+																		<h3 class="title">MD Aseef</h3>
+																		<h4 class="author-info"><span>3/4 B.Tech CSE</span><br/> Bapatla Engineering College</h4>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col-lg-4 col-md-4 col-sm-4">
+												<div class="panel panel-default lgx-panel">
+													<div class="panel-heading" role="tab" id="headingOne">
+														<div class="panel-title">
+															<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+																<div class="lgx-single-schedule">
+																	
+																	<div class="schedule-info">
+																		<h3 class="title">M. Akhil Reddy</h3>
+																		<h4 class="author-info"><span>3/4 B.Tech CSE</span><br/> Bapatla Engineering College</h4>
+																	</div>
+																</div>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//.ROW-->
+            </div>
+			</div>
+            <!-- //.CONTAINER -->
+    </div>
+</section>
+<!--Patrons End-->
+
+<!--FOOTER-->
+<footer>
+    <div id="lgx-footer" class="lgx-footer"> <!--lgx-footer-white-->
+        <div class="lgx-inner-footer">
+            <div class="lgx-subscriber-area ">
+                <div class="container">
+                </div>
+            </div>
+            <div class="container">
+                <div class="lgx-footer-area">
+                    <div class="lgx-footer-single">
+                        <h2 class="footer-title">Social Connection</h2>
+                       <p class="text">
+                            <br/>
+                        </p>
+                        <ul class="list-inline lgx-social-footer">
+                            <li><a href="https://www.facebook.com/bectagon2k19" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <!--<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+                            <li><a href="https://www.instagram.com/bectagon_2k19/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a href="mailto:bectagon2k19@becbapatla.ac.in" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Modal-->
+                <div id="lgx-modal-map" class="modal fade lgx-modal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="lgxmapcanvas map-canvas-default" id="map_canvas"> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- //.Modal-->
+
+                <div class="lgx-footer-bottom">
+                    <div class="lgx-copyright">
+                        <p> <span>©</span> 2019 <a href="http://www.becbapatla.ac.in/">Bapatla Engineering College</a> All Rights Reserved.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- //.CONTAINER -->
+        </div>
+        <!-- //.footer Middle -->
+    </div>
+</footer>
+<!--FOOTER END-->
+
+
+</div>
+<!--//.LGX SITE CONTAINER-->
+<!-- *** ADD YOUR SITE SCRIPT HERE *** -->
+<!-- JQUERY  -->
+<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+
+<!-- BOOTSTRAP JS  -->
+<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Smooth Scroll  -->
+<script src="assets/libs/jquery.smooth-scroll.js"></script>
+
+<!-- SKILLS SCRIPT  -->
+<script src="assets/libs/jquery.validate.js"></script>
+
+<!-- if load google maps then load this api, change api key as it may expire for limit cross as this is provided with any theme -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQvRGGtL6OrpP5xVMxq_0NgiMiRhm3ycI"></script>
+
+<!-- CUSTOM GOOGLE MAP -->
+<script type="text/javascript" src="assets/libs/gmap/jquery.googlemap.js"></script>
+
+<!-- adding magnific popup js library -->
+<script type="text/javascript" src="assets/libs/maginificpopup/jquery.magnific-popup.min.js"></script>
+
+<!-- Owl Carousel  -->
+<script src="assets/libs/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- COUNTDOWN   -->
+<script src="assets/libs/countdown.js"></script>
+<script src="assets/libs/timer/TimeCircles.js"></script>
+
+<!-- Counter JS -->
+<script src="assets/libs/waypoints.min.js"></script>
+<script src="assets/libs/counterup/jquery.counterup.min.js"></script>
+
+<!-- SMOTH SCROLL -->
+<script src="assets/libs/jquery.smooth-scroll.min.js"></script>
+<script src="assets/libs/jquery.easing.min.js"></script>
+
+<!-- type js -->
+<script src="assets/libs/typed/typed.min.js"></script>
+
+<!-- header parallax js -->
+<script src="assets/libs/header-parallax.js"></script>
+
+<!-- instafeed js -->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>-->
+<script src="assets/libs/instafeed.min.js"></script>
+
+</body>
+
+</html>
